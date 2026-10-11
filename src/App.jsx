@@ -1,11 +1,19 @@
 import { Routes, Route } from 'react-router'
+import ScrollManager from './components/ScrollManager.jsx'
+import CaseStudy from './pages/CaseStudy.jsx'
 import Home from './pages/Home.jsx'
+import NotFound from './pages/NotFound.jsx'
 
 export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      {/* /projets/:slug et la page 404 arrivent à l'étape 6 */}
-    </Routes>
+    <>
+      <ScrollManager />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projets/:slug" element={<CaseStudy />} />
+        {/* « * » attrape toutes les adresses inconnues */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </>
   )
 }
