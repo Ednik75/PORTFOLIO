@@ -15,5 +15,13 @@ export const profile = {
   ],
 
   // Bandeau défilant : une techno sur deux s'affiche en italique doré
+  // Colonnes de la section Compétences (dernière colonne = parcours)
+  skills: [
+    { title: 'Backend', items: ['Python · Django / DRF', 'NestJS', 'PostgreSQL · JWT'] },
+    { title: 'Frontend', items: ['React · Next.js', 'Tailwind · shadcn/ui', 'PWA'] },
+    { title: 'Mobile', items: ['Flutter', 'Riverpod · GoRouter', 'Android / iOS'] },
+    { title: 'Parcours', items: ['Licence info · BIT', 'Stage UJKZ', 'Prix Jeune Inventeur 2026'] },
+  ],
+
   techs: ['Django', 'React', 'Flutter', 'PostgreSQL', 'Next.js', 'NestJS', 'Tailwind', 'Riverpod'],
 }
