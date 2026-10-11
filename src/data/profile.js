@@ -13,4 +13,7 @@ export const profile = {
     ['Basé à', 'Koudougou · Ouagadougou'],
     ['Étudiant', 'BIT · Licence informatique'],
   ],
+
+  // Bandeau défilant : une techno sur deux s'affiche en italique doré
+  techs: ['Django', 'React', 'Flutter', 'PostgreSQL', 'Next.js', 'NestJS', 'Tailwind', 'Riverpod'],
 }
