@@ -1,0 +1,78 @@
+@import 'tailwindcss';
+@import './styles/animations.css';
+
+/* Design tokens : utilisables en classes Tailwind (bg-bg, text-accent, border-line…) */
+@theme {
+  --color-bg: #06070b;
+  --color-card: #0c0e14;
+  --color-line: #22252f;
+  --color-text: #f2f2ee;
+  --color-text-2: #c3c6cf;
+  --color-text-3: #9095a1;
+  --color-accent: #f0b93a;
+  --color-blue: #2b4fd8;
+  --color-magenta: #8a1f6e;
+  --color-green: #1f8a5b;
+  --color-red: #e5533d;
+
+  --font-sans: 'Schibsted Grotesk', system-ui, sans-serif;
+  --font-serif: 'Instrument Serif', serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  a {
+    color: var(--color-text);
+  }
+  a:hover {
+    color: var(--color-accent);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+  }
+}
+
+/* Classes utilitaires reprises des maquettes */
+@layer components {
+  .wrap {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .cap {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    line-height: 1.5;
+  }
+  .it {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+  .mega {
+    font-weight: 600;
+    font-size: clamp(60px, 13vw, 210px);
+    line-height: 0.88;
+    letter-spacing: -0.055em;
+  }
+  @media (max-width: 900px) {
+    .wrap {
+      padding: 0 16px;
+    }
+  }
+}
