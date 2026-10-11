@@ -14,7 +14,6 @@ export const profile = {
     ['Étudiant', 'BIT · Licence informatique'],
   ],
 
-  // Bandeau défilant : une techno sur deux s'affiche en italique doré
   // Colonnes de la section Compétences (dernière colonne = parcours)
   skills: [
     { title: 'Backend', items: ['Python · Django / DRF', 'NestJS', 'PostgreSQL · JWT'] },
@@ -23,5 +22,6 @@ export const profile = {
     { title: 'Parcours', items: ['Licence info · BIT', 'Stage UJKZ', 'Prix Jeune Inventeur 2026'] },
   ],
 
+  // Bandeau défilant : une techno sur deux s'affiche en italique doré
   techs: ['Django', 'React', 'Flutter', 'PostgreSQL', 'Next.js', 'NestJS', 'Tailwind', 'Riverpod'],
 }
