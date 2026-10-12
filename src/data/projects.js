@@ -34,19 +34,19 @@ export const projects = [
         },
         {
           title: 'Boutiques sur la carte',
-          text: 'Boutiques géolocalisées sur une carte interactive Leaflet, avec avis clients (note et commentaire).',
+          text: 'Le client voit les boutiques proches de lui sur une carte, et peut leur laisser une note et un avis.',
         },
         {
           title: 'Commande et paiement local',
-          text: 'Orange Money, Moov Money, Wave ou paiement à la livraison ; reçu par email à la commande et à la livraison.',
+          text: 'Le client paie avec Orange Money, Moov Money, Wave ou à la livraison, et reçoit un reçu par email.',
         },
         {
           title: 'Espace commerçant complet',
-          text: 'Produits avec photos, stock avec seuils d’alerte et historique, statistiques de vente en graphiques.',
+          text: 'Le commerçant ajoute ses produits avec photos, suit son stock (alerte quand il baisse) et voit ses ventes en graphiques.',
         },
         {
-          title: 'Sécurité soignée',
-          text: 'JWT, bcrypt, connexion Google, limitation de débit anti brute-force et décrément de stock transactionnel.',
+          title: 'Sécurisé',
+          text: 'Mots de passe chiffrés, connexion avec Google, protection contre les tentatives de piratage, et jamais deux clients pour le dernier article en stock.',
         },
       ],
       architecture: [
@@ -90,20 +90,20 @@ export const projects = [
         '[À RÉDIGER : en 3–4 phrases, comment les emplois du temps étaient gérés à l’UJKZ avant, et ce qui posait problème.]',
       features: [
         {
-          title: 'Consultation publique',
-          text: 'Recherche du programme d’une promotion sans compte, abonnement iCalendar et alertes Web Push.',
+          title: 'Ouvert à tous les étudiants',
+          text: 'Un étudiant trouve l’emploi du temps de sa classe sans créer de compte, l’ajoute à l’agenda de son téléphone et reçoit une notification quand il change.',
         },
         {
-          title: 'Moteur de conflits',
-          text: 'Détection des doubles réservations de salles, garantie jusque dans PostgreSQL par une contrainte d’exclusion.',
+          title: 'Zéro conflit de salle',
+          text: 'L’application refuse de mettre deux cours dans la même salle au même moment : le conflit est signalé tout de suite.',
         },
         {
           title: 'Programme semaine par semaine',
-          text: 'Chaque séance porte une date réelle, comme le programme publié chaque fin de semaine à l’UJKZ.',
+          text: 'À l’UJKZ, l’emploi du temps est publié chaque fin de semaine pour la semaine suivante : l’application fonctionne de la même façon.',
         },
         {
-          title: 'Multi-établissements',
-          text: 'Les 12 établissements de l’UJKZ, chaque scolarité cloisonnée à son périmètre, avec journal d’audit.',
+          title: 'Toute l’université',
+          text: 'Les 12 établissements de l’université utilisent le même outil ; chaque scolarité ne gère que le sien, et chaque modification est enregistrée.',
         },
       ],
       architecture: [
@@ -146,15 +146,15 @@ export const projects = [
       features: [
         {
           title: 'Catalogue de destinations',
-          text: 'Les touristes parcourent les destinations, consultent les avis et gèrent leur profil.',
+          text: 'Le touriste découvre les sites à visiter au Burkina Faso et lit les avis des autres visiteurs.',
         },
         {
           title: 'Réservation et paiement',
-          text: 'Réservation en ligne, paiement (simulé pour l’instant) et suivi dans « Mes réservations ».',
+          text: 'Il réserve sa visite en ligne et la retrouve dans « Mes réservations ». Le paiement est simulé pour l’instant.',
         },
         {
           title: 'Tableau de bord admin',
-          text: 'Une application séparée pour gérer les destinations et confirmer les réservations.',
+          text: 'Un espace réservé à l’administration pour ajouter des destinations et confirmer les réservations.',
         },
       ],
       architecture: [
@@ -186,19 +186,19 @@ export const projects = [
       features: [
         {
           title: 'Essayage virtuel',
-          text: 'La monture se superpose au visage en temps réel via la caméra (MediaPipe + canvas), adaptée à sa forme.',
+          text: 'Le client allume sa caméra et voit les lunettes directement sur son visage avant de les acheter.',
         },
         {
-          title: 'Ordonnance lue par OCR',
-          text: 'Upload d’une ordonnance (image ou PDF) et extraction automatique OD/OG avec Tesseract et OpenCV.',
+          title: 'Ordonnance lue automatiquement',
+          text: 'Le client envoie une photo de son ordonnance : l’application lit toute seule les corrections de chaque œil.',
         },
         {
           title: 'Commande de bout en bout',
-          text: 'Assurance, codes promo, réductions famille, paiement Orange Money, Wave ou carte, suivi par statut et email.',
+          text: 'Assurance, codes promo, réductions pour la famille, paiement Orange Money, Wave ou carte, et suivi de la commande par email.',
         },
         {
-          title: 'Back-office opticien',
-          text: 'Montures et stock avec alertes, commandes, statistiques et campagnes SMS marketing.',
+          title: 'Espace opticien',
+          text: 'L’opticien gère ses lunettes et son stock, traite les commandes, suit ses ventes et envoie des SMS à ses clients.',
         },
       ],
       architecture: [
