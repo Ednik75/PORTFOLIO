@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router'
 import { getCaseStudy, projects } from '../data/projects.js'
 import { profile } from '../data/profile.js'
 import ArrowIcon from '../components/ArrowIcon.jsx'
+import Seo from '../components/Seo.jsx'
 import FaniStripe from '../components/FaniStripe.jsx'
 import Architecture from '../components/case-study/Architecture.jsx'
 import CaseSection, { CaseText } from '../components/case-study/CaseSection.jsx'
@@ -36,6 +37,7 @@ export default function CaseStudy() {
 
   return (
     <>
+      <Seo title={`${project.title} — Étude de cas · ${profile.name}`} description={project.desc} />
       <div className="fani-lg" aria-hidden="true" />
 
       <header className="wrap flex items-center justify-between gap-4 py-6">
@@ -48,7 +50,7 @@ export default function CaseStudy() {
         </span>
       </header>
 
-      <main>
+      <main id="contenu">
         <section className="wrap py-14 flex flex-col gap-7">
           <span className="cap text-accent">{study.label}</span>
           <h1 className="m-0 font-bold text-[56px] min-[901px]:text-[96px] leading-[0.95] tracking-[-0.04em]">
@@ -60,9 +62,9 @@ export default function CaseStudy() {
             <MetaItem label="Stack">{project.stack}</MetaItem>
             <MetaItem label="Statut">{study.status}</MetaItem>
             <MetaItem label="Liens">
-              <span className="flex gap-4">
-                <a href={study.demo}>Démo</a>
-                <a href={study.code}>Code</a>
+              <span className="flex gap-4 -my-2.5">
+                <a href={study.demo} className="min-h-11 inline-flex items-center">Démo</a>
+                <a href={study.code} className="min-h-11 inline-flex items-center">Code</a>
               </span>
             </MetaItem>
           </div>

@@ -1,12 +1,14 @@
 import { Link } from 'react-router'
 import ArrowIcon from '../components/ArrowIcon.jsx'
 import FaniStripe from '../components/FaniStripe.jsx'
+import Seo from '../components/Seo.jsx'
 import Glows from '../components/Glows.jsx'
 
 export default function NotFound() {
   return (
     <>
-      <main className="stage min-h-svh flex flex-col justify-center">
+      <Seo title="Page introuvable — Martial Nitiema" description="Cette adresse ne correspond à aucune page du portfolio." />
+      <main id="contenu" className="stage min-h-svh flex flex-col justify-center">
         <Glows />
         <div className="wrap flex flex-col gap-8 py-20">
           <span className="cap text-text-2">Erreur 404</span>

@@ -7,6 +7,10 @@ import NotFound from './pages/NotFound.jsx'
 export default function App() {
   return (
     <>
+      {/* Invisible jusqu'à ce qu'on appuie sur Tab : permet de sauter directement au contenu */}
+      <a href="#contenu" className="skip-link cap">
+        Aller au contenu
+      </a>
       <ScrollManager />
       <Routes>
         <Route path="/" element={<Home />} />
