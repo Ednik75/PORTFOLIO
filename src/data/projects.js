@@ -26,7 +26,7 @@ export const projects = [
       code: 'https://github.com/Ednik75/faso_market',
       heroVisual: { image: null, placeholder: '[VISUEL PRINCIPAL — capture desktop + téléphone côte à côte]' },
       problem:
-        '[À RÉDIGER : en 3–4 phrases, le problème des commerçants et des clients que tu as observé, et pourquoi les solutions existantes ne suffisaient pas.]',
+        'Pour acheter un article, on doit souvent faire le tour de plusieurs boutiques, sans être sûr de le trouver. FasoMarket a été créé pour faciliter la vie de la population : depuis son téléphone ou son ordinateur, on trouve les boutiques proches de sa position et on vérifie si elles ont ce qu’on cherche. Ensuite, on commande et on se fait livrer, ou on se rend directement dans la bonne boutique, sans déplacement inutile.',
       features: [
         {
           title: 'Trois espaces, une plateforme',
@@ -142,7 +142,8 @@ export const projects = [
       demo: 'https://frontend-touriste.vercel.app',
       code: 'https://github.com/tourismplatform/tourism-platform',
       heroVisual: { image: null, placeholder: '[VISUEL PRINCIPAL — page d’accueil touriste]' },
-      problem: '[À RÉDIGER : le problème que ce projet résout, en 3–4 phrases.]',
+      problem:
+        'Tourism Platform est née d’une idée simple : promouvoir le tourisme au Burkina Faso. Après avoir créé un compte, le visiteur découvre les différents sites touristiques du pays et réserve sa visite directement sur la plateforme, au même endroit.',
       features: [
         {
           title: 'Catalogue de destinations',
@@ -182,7 +183,8 @@ export const projects = [
       demo: '[LIEN DÉMO]',
       code: 'https://github.com/Ednik75/optilunette',
       heroVisual: { image: null, placeholder: '[VISUEL PRINCIPAL — essayage virtuel]' },
-      problem: '[À RÉDIGER : le problème que ce projet résout, en 3–4 phrases.]',
+      problem:
+        'Pour se procurer des lunettes, surtout des verres médicaux, il faut souvent passer d’une boutique à l’autre, essayer plusieurs montures, et ne rien trouver qui plaise. OptiLunette évite tous ces déplacements : depuis chez soi, on parcourt les boutiques, on essaie virtuellement les montures, et on envoie son ordonnance, lue automatiquement. L’opticien prépare la monture et la fait livrer à domicile.',
       features: [
         {
           title: 'Essayage virtuel',
