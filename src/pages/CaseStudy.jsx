@@ -65,6 +65,10 @@ export default function CaseStudy() {
               <span className="flex gap-4 -my-2.5">
                 <a href={study.demo} className="min-h-11 inline-flex items-center">Démo</a>
                 <a href={study.code} className="min-h-11 inline-flex items-center">Code</a>
+                {/* Second dépôt quand le backend vit à part (ex. Campus Manager) */}
+                {study.codeApi && (
+                  <a href={study.codeApi} className="min-h-11 inline-flex items-center">API</a>
+                )}
               </span>
             </MetaItem>
           </div>
