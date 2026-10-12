@@ -87,7 +87,7 @@ export const projects = [
       codeApi: 'https://github.com/Kevin23phx/Gestionnaire_emploi_de_temps_backDjango',
       heroVisual: { image: null, placeholder: '[VISUEL PRINCIPAL — grille d’emploi du temps]' },
       problem:
-        '[À RÉDIGER : en 3–4 phrases, comment les emplois du temps étaient gérés à l’UJKZ avant, et ce qui posait problème.]',
+        'À l’université, nous avons souvent constaté que plusieurs promotions étaient programmées dans le même amphithéâtre au même moment, ce qui créait des conflits. Les emplois du temps arrivaient aussi souvent tard, et les étudiants découvraient leur programme au dernier moment. D’où l’idée de Campus Manager : un outil où chaque UFR programme ses cours sans risque de chevauchement, et où les étudiants consultent leur emploi du temps sans même créer de compte.',
       features: [
         {
           title: 'Ouvert à tous les étudiants',
