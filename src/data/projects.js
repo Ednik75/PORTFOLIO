@@ -1,5 +1,5 @@
-// Les projets du portfolio : ceux de la maquette (design/accueil-anime.html), complétés
-// avec les infos réelles des dépôts GitHub (FasoMarket, Campus Manager, Tourism Platform, OptiLunette).
+// Les projets du portfolio, un par dépôt GitHub sélectionné :
+// FasoMarket, Campus Manager (front + API), Tourism Platform, OptiLunette.
 // - slug   : sert à l'adresse de la page étude de cas → /projets/<slug>
 // - c1, c2 : couleurs des deux halos de la carte
 // - image  : chemin d'une capture WebP dans public/images/projets/ (null = placeholder affiché)
@@ -66,16 +66,6 @@ export const projects = [
       learnings:
         '[À RÉDIGER : 2–3 apprentissages concrets — un défi technique résolu, une décision d’architecture, ce que tu ferais autrement.]',
     },
-  },
-  {
-    slug: 'lafisira',
-    title: 'LAFISIRA',
-    kind: 'Mobile · Santé',
-    c1: '#8A1F6E',
-    c2: '#1F8A5B',
-    desc: 'Diagnostic vocal par IA hors-ligne, pharmacopée traditionnelle et éco-alertes. Prix du Jeune Inventeur 2026.',
-    stack: 'Flutter · FastAPI · SQLite',
-    image: null,
   },
   {
     slug: 'campus-manager',
@@ -218,46 +208,6 @@ export const projects = [
       ],
       numbers: [{ value: '3', label: 'rôles utilisateurs' }],
     },
-  },
-  {
-    slug: 'mdconvert',
-    title: 'MDConvert',
-    kind: 'Web · Outil',
-    c1: '#F0B93A',
-    c2: '#2B4FD8',
-    desc: 'Convertit n’importe quel fichier en Markdown pour économiser les tokens des IA.',
-    stack: 'Application web',
-    image: null,
-  },
-  {
-    slug: 'sotraco-track',
-    title: 'SOTRACO Track',
-    kind: 'Mobile · Transport',
-    c1: '#1F8A5B',
-    c2: '#2B4FD8',
-    desc: 'Suivi des bus SOTRACO à Ouagadougou en temps réel.',
-    stack: 'Flutter · Django Channels · Redis',
-    image: null,
-  },
-  {
-    slug: 'resto-vitrine',
-    title: 'Resto vitrine',
-    kind: 'Web · Restauration',
-    c1: '#E5533D',
-    c2: '#F0B93A',
-    desc: 'Site vitrine de restaurant avec commande directe via WhatsApp.',
-    stack: 'React · Tailwind CSS',
-    image: null,
-  },
-  {
-    slug: 'droplink',
-    title: 'DropLink',
-    kind: 'Web / Mobile · Outil',
-    c1: '#2B4FD8',
-    c2: '#1F8A5B',
-    desc: 'Transfert de fichiers PC ↔ téléphone sans câble, par scan de QR code.',
-    stack: 'Multi-plateforme',
-    image: null,
   },
 ]
 
