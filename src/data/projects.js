@@ -1,25 +1,28 @@
-// Les 8 projets, repris à l'identique de la maquette (design/accueil-anime.html).
+// Les projets du portfolio : ceux de la maquette (design/accueil-anime.html), complétés
+// avec les infos réelles des dépôts GitHub (FasoMarket, Campus Manager, Tourism Platform, OptiLunette).
 // - slug   : sert à l'adresse de la page étude de cas → /projets/<slug>
 // - c1, c2 : couleurs des deux halos de la carte
 // - image  : chemin d'une capture WebP dans public/images/projets/ (null = placeholder affiché)
 // - caseStudy : contenu de la page /projets/<slug>. Absent = page remplie de placeholders
 //   (voir getCaseStudy en bas du fichier).
+// - caseStudy.codeApi : lien facultatif vers un second dépôt (backend séparé)
 export const projects = [
   {
     slug: 'fasomarket',
     title: 'FasoMarket',
-    kind: 'Web + Mobile',
+    kind: 'Web · Marketplace',
     c1: '#1F8A5B',
     c2: '#F0B93A',
     desc: 'Marketplace locale : clients, commerçants, admin, et paiement Orange Money, Moov Money, Wave.',
-    stack: 'Django REST · React · Flutter',
+    stack: 'Node.js · Express · React',
     image: null,
+    // Contenu tiré du dépôt github.com/Ednik75/faso_market (README)
     caseStudy: {
-      label: 'Marketplace · Web + Mobile',
-      lead: 'Une marketplace locale où les commerçants burkinabè vendent en ligne et où les clients paient avec le mobile money qu’ils utilisent déjà.',
+      label: 'Marketplace · Web',
+      lead: 'Une marketplace locale qui connecte les commerçants de Ouagadougou à leurs clients : catalogue, commandes, stock, statistiques et paiement mobile money.',
       role: 'Développeur fullstack',
-      status: 'En ligne · Railway',
-      demo: '[LIEN DÉMO]',
+      status: 'En ligne · Render',
+      demo: 'https://marketbf.onrender.com',
       code: 'https://github.com/Ednik75/faso_market',
       heroVisual: { image: null, placeholder: '[VISUEL PRINCIPAL — capture desktop + téléphone côte à côte]' },
       problem:
@@ -27,37 +30,38 @@ export const projects = [
       features: [
         {
           title: 'Trois espaces, une plateforme',
-          text: 'Un parcours dédié au client, au commerçant et à l’administrateur, avec authentification JWT.',
+          text: 'Un parcours dédié au client, au commerçant et à l’administrateur, qui valide les boutiques avant leur mise en ligne.',
         },
         {
-          title: 'Paiement mobile money',
-          text: 'Orange Money, Moov Money et Wave intégrés au tunnel de commande.',
+          title: 'Boutiques sur la carte',
+          text: 'Boutiques géolocalisées sur une carte interactive Leaflet, avec avis clients (note et commentaire).',
         },
         {
-          title: 'Une app mobile complète',
-          text: '17 écrans Flutter, état géré avec Riverpod et navigation GoRouter.',
+          title: 'Commande et paiement local',
+          text: 'Orange Money, Moov Money, Wave ou paiement à la livraison ; reçu par email à la commande et à la livraison.',
         },
         {
-          title: 'Qualité et déploiement',
-          text: '48 tests automatisés (pytest, factory-boy) et mise en production sur Railway.',
+          title: 'Espace commerçant complet',
+          text: 'Produits avec photos, stock avec seuils d’alerte et historique, statistiques de vente en graphiques.',
+        },
+        {
+          title: 'Sécurité soignée',
+          text: 'JWT, bcrypt, connexion Google, limitation de débit anti brute-force et décrément de stock transactionnel.',
         },
       ],
-      // Schéma en 3 blocs ; `highlight` = bloc central encadré en doré
       architecture: [
-        { label: 'Clients', titles: ['App Flutter', 'Web React + Tailwind'] },
-        { label: 'API', titles: ['Django REST Framework'], detail: 'JWT · rôles · paiements', highlight: true },
-        { label: 'Données & services', titles: ['PostgreSQL'], detail: 'Orange Money · Moov · Wave' },
+        { label: 'Client', titles: ['Web React + Tailwind'], detail: 'Leaflet · Recharts' },
+        { label: 'API', titles: ['Node.js · Express'], detail: 'JWT · rôles · paiements', highlight: true },
+        { label: 'Données & services', titles: ['Turso (libSQL)'], detail: 'Cloudinary · emails' },
       ],
       numbers: [
-        { value: '17', label: 'écrans mobiles' },
-        { value: '48', label: 'tests automatisés' },
         { value: '3', label: 'rôles utilisateurs' },
-        { value: '3', label: 'mobile money' },
+        { value: '4', label: 'modes de paiement' },
       ],
       shots: [
         { image: null, placeholder: '[CAPTURE — espace commerçant]' },
-        { image: null, placeholder: '[ÉCRAN MOBILE — catalogue]' },
-        { image: null, placeholder: '[ÉCRAN MOBILE — paiement]' },
+        { image: null, placeholder: '[CAPTURE — carte des boutiques]' },
+        { image: null, placeholder: '[CAPTURE — paiement]' },
       ],
       learnings:
         '[À RÉDIGER : 2–3 apprentissages concrets — un défi technique résolu, une décision d’architecture, ce que tu ferais autrement.]',
@@ -80,8 +84,95 @@ export const projects = [
     c1: '#2B4FD8',
     c2: '#8A1F6E',
     desc: 'Emplois du temps universitaires en temps réel, avec détection automatique des conflits.',
-    stack: 'Next.js · NestJS · PostgreSQL',
+    stack: 'Next.js · Django REST · PostgreSQL',
     image: null,
+    // Contenu tiré des dépôts Gestionnaire_emploi_de_temps (front) et _backDjango (API)
+    caseStudy: {
+      label: 'Université · Web (PWA)',
+      lead: 'L’outil de gestion des emplois du temps de l’Université Joseph Ki-Zerbo : les scolarités planifient, les étudiants consultent leur programme sans compte.',
+      role: 'Développeur fullstack · stage',
+      status: 'En ligne · Cloudflare + Render',
+      demo: 'https://campus-manager.nitiemamartial.workers.dev',
+      code: 'https://github.com/Kevin23phx/Gestionnaire_emploi_de_temps',
+      codeApi: 'https://github.com/Kevin23phx/Gestionnaire_emploi_de_temps_backDjango',
+      heroVisual: { image: null, placeholder: '[VISUEL PRINCIPAL — grille d’emploi du temps]' },
+      problem:
+        '[À RÉDIGER : en 3–4 phrases, comment les emplois du temps étaient gérés à l’UJKZ avant, et ce qui posait problème.]',
+      features: [
+        {
+          title: 'Consultation publique',
+          text: 'Recherche du programme d’une promotion sans compte, abonnement iCalendar et alertes Web Push.',
+        },
+        {
+          title: 'Moteur de conflits',
+          text: 'Détection des doubles réservations de salles, garantie jusque dans PostgreSQL par une contrainte d’exclusion.',
+        },
+        {
+          title: 'Programme semaine par semaine',
+          text: 'Chaque séance porte une date réelle, comme le programme publié chaque fin de semaine à l’UJKZ.',
+        },
+        {
+          title: 'Multi-établissements',
+          text: 'Les 12 établissements de l’UJKZ, chaque scolarité cloisonnée à son périmètre, avec journal d’audit.',
+        },
+      ],
+      architecture: [
+        { label: 'Client', titles: ['PWA Next.js'], detail: 'Cloudflare Workers' },
+        { label: 'API', titles: ['Django REST Framework'], detail: 'session · rôles · conflits', highlight: true },
+        { label: 'Données & services', titles: ['PostgreSQL'], detail: 'iCalendar · Web Push' },
+      ],
+      numbers: [
+        { value: '12', label: 'établissements' },
+        { value: '53', label: 'départements' },
+      ],
+      shots: [
+        { image: null, placeholder: '[CAPTURE — planning de la scolarité]' },
+        { image: null, placeholder: '[ÉCRAN MOBILE — programme public]' },
+        { image: null, placeholder: '[ÉCRAN MOBILE — alertes]' },
+      ],
+      learnings:
+        '[À RÉDIGER : 2–3 apprentissages concrets — par exemple la migration du backend NestJS vers Django à contrat d’API identique.]',
+    },
+  },
+  {
+    slug: 'tourisme-burkina',
+    title: 'Tourism Platform',
+    kind: 'Web · Tourisme',
+    c1: '#F0B93A',
+    c2: '#1F8A5B',
+    desc: 'Découverte et réservation de destinations touristiques au Burkina Faso, avec tableau de bord admin.',
+    stack: 'Next.js · NestJS · Supabase',
+    image: null,
+    // Contenu tiré du dépôt github.com/tourismplatform/tourism-platform (projet d'équipe)
+    caseStudy: {
+      label: 'Tourisme · Web',
+      lead: 'Une plateforme pour découvrir les destinations du Burkina Faso et les réserver en ligne, avec un tableau de bord pour l’administration.',
+      role: '[Ton rôle dans l’équipe]',
+      status: '[Statut]',
+      demo: 'https://frontend-touriste.vercel.app',
+      code: 'https://github.com/tourismplatform/tourism-platform',
+      heroVisual: { image: null, placeholder: '[VISUEL PRINCIPAL — page d’accueil touriste]' },
+      problem: '[À RÉDIGER : le problème que ce projet résout, en 3–4 phrases.]',
+      features: [
+        {
+          title: 'Catalogue de destinations',
+          text: 'Les touristes parcourent les destinations, consultent les avis et gèrent leur profil.',
+        },
+        {
+          title: 'Réservation et paiement',
+          text: 'Réservation en ligne, paiement (simulé pour l’instant) et suivi dans « Mes réservations ».',
+        },
+        {
+          title: 'Tableau de bord admin',
+          text: 'Une application séparée pour gérer les destinations et confirmer les réservations.',
+        },
+      ],
+      architecture: [
+        { label: 'Clients', titles: ['App touriste Next.js', 'Dashboard admin Next.js'] },
+        { label: 'API', titles: ['NestJS'], detail: 'JWT · Swagger', highlight: true },
+        { label: 'Données', titles: ['Supabase (PostgreSQL)'] },
+      ],
+    },
   },
   {
     slug: 'optilunette',
@@ -90,8 +181,43 @@ export const projects = [
     c1: '#E5533D',
     c2: '#2B4FD8',
     desc: 'Boutique de lunettes avec essayage virtuel et back-office pour opticiens.',
-    stack: '[Ta stack]',
+    stack: 'React · Django REST · PostgreSQL',
     image: null,
+    // Contenu tiré du dépôt github.com/Ednik75/optilunette (README)
+    caseStudy: {
+      label: 'E-commerce · Web',
+      lead: 'Une plateforme optique où les clients essaient et achètent leurs lunettes en ligne, et où les opticiens gèrent leur boutique.',
+      role: 'Développeur fullstack',
+      status: '[Statut]',
+      demo: '[LIEN DÉMO]',
+      code: 'https://github.com/Ednik75/optilunette',
+      heroVisual: { image: null, placeholder: '[VISUEL PRINCIPAL — essayage virtuel]' },
+      problem: '[À RÉDIGER : le problème que ce projet résout, en 3–4 phrases.]',
+      features: [
+        {
+          title: 'Essayage virtuel',
+          text: 'La monture se superpose au visage en temps réel via la caméra (MediaPipe + canvas), adaptée à sa forme.',
+        },
+        {
+          title: 'Ordonnance lue par OCR',
+          text: 'Upload d’une ordonnance (image ou PDF) et extraction automatique OD/OG avec Tesseract et OpenCV.',
+        },
+        {
+          title: 'Commande de bout en bout',
+          text: 'Assurance, codes promo, réductions famille, paiement Orange Money, Wave ou carte, suivi par statut et email.',
+        },
+        {
+          title: 'Back-office opticien',
+          text: 'Montures et stock avec alertes, commandes, statistiques et campagnes SMS marketing.',
+        },
+      ],
+      architecture: [
+        { label: 'Client', titles: ['React + TypeScript'], detail: 'Vite · Tailwind · MediaPipe' },
+        { label: 'API', titles: ['Django REST Framework'], detail: 'JWT · OTP SMS · rôles', highlight: true },
+        { label: 'Données & services', titles: ['PostgreSQL'], detail: 'Tesseract · OpenCV' },
+      ],
+      numbers: [{ value: '3', label: 'rôles utilisateurs' }],
+    },
   },
   {
     slug: 'mdconvert',
