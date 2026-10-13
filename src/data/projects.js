@@ -20,7 +20,7 @@ export const projects = [
     caseStudy: {
       label: 'Marketplace · Projet universitaire',
       lead: 'Une marketplace locale qui connecte les commerçants de Ouagadougou à leurs clients : catalogue, commandes, stock, statistiques et paiement mobile money.',
-      role: 'Développeur fullstack',
+      role: 'Développeur fullstack · solo',
       status: 'En ligne · Render',
       demo: 'https://marketbf.onrender.com',
       code: 'https://github.com/Ednik75/faso_market',
@@ -63,8 +63,6 @@ export const projects = [
         { image: null, placeholder: '[CAPTURE — carte des boutiques]' },
         { image: null, placeholder: '[CAPTURE — paiement]' },
       ],
-      learnings:
-        '[À RÉDIGER : 2–3 apprentissages concrets — un défi technique résolu, une décision d’architecture, ce que tu ferais autrement.]',
     },
   },
   {
@@ -120,8 +118,6 @@ export const projects = [
         { image: null, placeholder: '[ÉCRAN MOBILE — programme public]' },
         { image: null, placeholder: '[ÉCRAN MOBILE — alertes]' },
       ],
-      learnings:
-        '[À RÉDIGER : 2–3 apprentissages concrets — par exemple la migration du backend NestJS vers Django à contrat d’API identique.]',
     },
   },
   {
@@ -233,7 +229,7 @@ export function getCaseStudy(project) {
       { image: null, placeholder: '[CAPTURE 2]' },
       { image: null, placeholder: '[CAPTURE 3]' },
     ],
-    learnings: '[À RÉDIGER : 2–3 apprentissages concrets tirés de ce projet.]',
+    learnings: null, // null = section « Ce que j'ai appris » masquée
     ...project.caseStudy,
   }
 }

@@ -125,9 +125,11 @@ export default function CaseStudy() {
           </div>
         </section>
 
-        <CaseSection number={nextNumber()} label="Bilan" title="Ce que j'ai appris">
-          <CaseText>{study.learnings}</CaseText>
-        </CaseSection>
+        {study.learnings && (
+          <CaseSection number={nextNumber()} label="Bilan" title="Ce que j'ai appris">
+            <CaseText>{study.learnings}</CaseText>
+          </CaseSection>
+        )}
 
         <NextProject project={nextProject} />
       </main>
