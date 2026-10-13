@@ -22,7 +22,7 @@ function Shot({ project }) {
           width="384"
           height="260"
           loading="lazy"
-          className="relative size-full object-cover"
+          className="relative size-full object-cover object-top"
         />
       ) : (
         <span className="cap relative text-text text-center px-4">[Capture {project.title}]</span>

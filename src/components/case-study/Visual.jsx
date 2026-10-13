@@ -8,11 +8,11 @@ export default function Visual({ visual, className = '', rounded = 'rounded-[22p
       {visual.image ? (
         <img
           src={visual.image}
-          alt=""
+          alt={visual.alt ?? ''}
           width={width}
           height={height}
           loading="lazy"
-          className="size-full object-cover"
+          className="size-full object-cover object-top"
         />
       ) : (
         <span className="cap text-text-3 text-center px-4">{visual.placeholder}</span>
