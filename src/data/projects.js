@@ -2,7 +2,8 @@
 // FasoMarket, Campus Manager (front + API), Tourism Platform, OptiLunette.
 // - slug   : sert à l'adresse de la page étude de cas → /projets/<slug>
 // - c1, c2 : couleurs des deux halos de la carte
-// - image  : chemin d'une capture WebP dans public/images/projets/ (null = placeholder affiché)
+// - image  : capture WebP de la carte, dans public/images/projets/<slug>/ (null = placeholder affiché)
+// - heroVisual / shots : captures de l'étude de cas ; `alt` décrit l'image pour les lecteurs d'écran
 // - caseStudy : contenu de la page /projets/<slug>. Absent = page remplie de placeholders
 //   (voir getCaseStudy en bas du fichier).
 // - caseStudy.codeApi : lien facultatif vers un second dépôt (backend séparé)
@@ -15,7 +16,7 @@ export const projects = [
     c2: '#F0B93A',
     desc: 'Marketplace locale : clients, commerçants, admin, et paiement Orange Money, Moov Money, Wave.',
     stack: 'Node.js · Express · React',
-    image: null,
+    image: '/images/projets/fasomarket/carte.webp',
     // Contenu tiré du dépôt github.com/Ednik75/faso_market (README)
     caseStudy: {
       label: 'Marketplace · Projet universitaire',
@@ -24,7 +25,7 @@ export const projects = [
       status: 'En ligne · Render',
       demo: 'https://marketbf.onrender.com',
       code: 'https://github.com/Ednik75/faso_market',
-      heroVisual: { image: null, placeholder: '[VISUEL PRINCIPAL — capture desktop + téléphone côte à côte]' },
+      heroVisual: { image: '/images/projets/fasomarket/principal.webp', alt: 'Capture d’écran : page d’accueil de FasoMarket' },
       problem:
         'Pour acheter un article, on doit souvent faire le tour de plusieurs boutiques, sans être sûr de le trouver. FasoMarket a été créé pour faciliter la vie de la population : depuis son téléphone ou son ordinateur, on trouve les boutiques proches de sa position et on vérifie si elles ont ce qu’on cherche. Ensuite, on commande et on se fait livrer, ou on se rend directement dans la bonne boutique, sans déplacement inutile.',
       features: [
@@ -59,9 +60,9 @@ export const projects = [
         { value: '4', label: 'modes de paiement' },
       ],
       shots: [
-        { image: null, placeholder: '[CAPTURE — espace commerçant]' },
-        { image: null, placeholder: '[CAPTURE — carte des boutiques]' },
-        { image: null, placeholder: '[CAPTURE — paiement]' },
+        { image: '/images/projets/fasomarket/capture-1.webp', alt: 'Capture d’écran : tableau de bord du commerçant' },
+        { image: '/images/projets/fasomarket/capture-2.webp', alt: 'Capture d’écran : catalogue des produits sur mobile' },
+        { image: '/images/projets/fasomarket/capture-3.webp', alt: 'Capture d’écran : choix du quartier pour trouver les boutiques proches' },
       ],
     },
   },
@@ -73,7 +74,7 @@ export const projects = [
     c2: '#8A1F6E',
     desc: 'Emplois du temps universitaires en temps réel, avec détection automatique des conflits.',
     stack: 'Next.js · Django REST · PostgreSQL',
-    image: null,
+    image: '/images/projets/campus-manager/carte.webp',
     // Contenu tiré des dépôts Gestionnaire_emploi_de_temps (front) et _backDjango (API)
     caseStudy: {
       label: 'Université · Web (PWA)',
@@ -83,7 +84,7 @@ export const projects = [
       demo: 'https://campus-manager.nitiemamartial.workers.dev',
       code: 'https://github.com/Kevin23phx/Gestionnaire_emploi_de_temps',
       codeApi: 'https://github.com/Kevin23phx/Gestionnaire_emploi_de_temps_backDjango',
-      heroVisual: { image: null, placeholder: '[VISUEL PRINCIPAL — grille d’emploi du temps]' },
+      heroVisual: { image: '/images/projets/campus-manager/principal.webp', alt: 'Capture d’écran : emploi du temps d’une promotion dans Campus Manager' },
       problem:
         'À l’université, nous avons souvent constaté que plusieurs promotions étaient programmées dans le même amphithéâtre au même moment, ce qui créait des conflits. Les emplois du temps arrivaient aussi souvent tard, et les étudiants découvraient leur programme au dernier moment. D’où l’idée de Campus Manager : un outil où chaque UFR programme ses cours sans risque de chevauchement, et où les étudiants consultent leur emploi du temps sans même créer de compte.',
       features: [
@@ -114,9 +115,9 @@ export const projects = [
         { value: '53', label: 'départements' },
       ],
       shots: [
-        { image: null, placeholder: '[CAPTURE — planning de la scolarité]' },
-        { image: null, placeholder: '[ÉCRAN MOBILE — programme public]' },
-        { image: null, placeholder: '[ÉCRAN MOBILE — alertes]' },
+        { image: '/images/projets/campus-manager/capture-1.webp', alt: 'Capture d’écran : tableau de bord de la scolarité' },
+        { image: '/images/projets/campus-manager/capture-2.webp', alt: 'Capture d’écran : recherche d’un emploi du temps sur mobile' },
+        { image: '/images/projets/campus-manager/capture-3.webp', alt: 'Capture d’écran : emploi du temps de la semaine sur mobile' },
       ],
     },
   },
@@ -128,7 +129,7 @@ export const projects = [
     c2: '#1F8A5B',
     desc: 'Découverte et réservation de destinations touristiques au Burkina Faso, avec tableau de bord admin.',
     stack: 'Next.js · NestJS · Supabase',
-    image: null,
+    image: '/images/projets/tourisme-burkina/carte.webp',
     // Contenu tiré du dépôt github.com/tourismplatform/tourism-platform (projet d'équipe)
     caseStudy: {
       label: 'Tourisme · Projet universitaire',
@@ -137,7 +138,12 @@ export const projects = [
       status: '[Statut]',
       demo: 'https://frontend-touriste.vercel.app',
       code: 'https://github.com/tourismplatform/tourism-platform',
-      heroVisual: { image: null, placeholder: '[VISUEL PRINCIPAL — page d’accueil touriste]' },
+      heroVisual: { image: '/images/projets/tourisme-burkina/principal.webp', alt: 'Capture d’écran : page d’accueil de Tourism Platform' },
+      shots: [
+        { image: '/images/projets/tourisme-burkina/capture-1.webp', alt: 'Capture d’écran : documentation de l’API NestJS (Swagger)' },
+        { image: '/images/projets/tourisme-burkina/capture-2.webp', alt: 'Capture d’écran : page d’accueil sur mobile' },
+        { image: '/images/projets/tourisme-burkina/capture-3.webp', alt: 'Capture d’écran : page de connexion' },
+      ],
       problem:
         'Tourism Platform est née d’une idée simple : promouvoir le tourisme au Burkina Faso. Après avoir créé un compte, le visiteur découvre les différents sites touristiques du pays et réserve sa visite directement sur la plateforme, au même endroit.',
       features: [
@@ -169,7 +175,7 @@ export const projects = [
     c2: '#2B4FD8',
     desc: 'Boutique de lunettes avec essayage virtuel et back-office pour opticiens.',
     stack: 'React · Django REST · PostgreSQL',
-    image: null,
+    image: '/images/projets/optilunette/carte.webp',
     // Contenu tiré du dépôt github.com/Ednik75/optilunette (README)
     caseStudy: {
       label: 'E-commerce · Projet perso',
@@ -178,7 +184,12 @@ export const projects = [
       status: '[Statut]',
       demo: '[LIEN DÉMO]',
       code: 'https://github.com/Ednik75/optilunette',
-      heroVisual: { image: null, placeholder: '[VISUEL PRINCIPAL — essayage virtuel]' },
+      heroVisual: { image: '/images/projets/optilunette/principal.webp', alt: 'Capture d’écran : page d’accueil d’OptiLunette' },
+      shots: [
+        { image: '/images/projets/optilunette/capture-1.webp', alt: 'Capture d’écran : les services proposés aux clients' },
+        { image: '/images/projets/optilunette/capture-2.webp', alt: 'Capture d’écran : page d’accueil sur mobile' },
+        { image: '/images/projets/optilunette/capture-3.webp', alt: 'Capture d’écran : essai virtuel présenté sur mobile' },
+      ],
       problem:
         'Pour se procurer des lunettes, surtout des verres médicaux, il faut souvent passer d’une boutique à l’autre, essayer plusieurs montures, et ne rien trouver qui plaise. OptiLunette évite tous ces déplacements : depuis chez soi, on parcourt les boutiques, on essaie virtuellement les montures, et on envoie son ordonnance, lue automatiquement. L’opticien prépare la monture et la fait livrer à domicile.',
       features: [
