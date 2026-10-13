@@ -137,7 +137,7 @@ export const projects = [
     caseStudy: {
       label: 'Tourisme · Projet universitaire',
       lead: 'Une plateforme pour découvrir les destinations du Burkina Faso et les réserver en ligne, avec un tableau de bord pour l’administration.',
-      role: '[Ton rôle dans l’équipe]',
+      role: 'Développeur backend · en équipe',
       status: '[Statut]',
       demo: 'https://frontend-touriste.vercel.app',
       code: 'https://github.com/tourismplatform/tourism-platform',
