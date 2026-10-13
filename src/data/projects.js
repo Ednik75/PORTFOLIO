@@ -10,7 +10,7 @@ export const projects = [
   {
     slug: 'fasomarket',
     title: 'FasoMarket',
-    kind: 'Web · Marketplace',
+    kind: 'Web · Projet universitaire',
     c1: '#1F8A5B',
     c2: '#F0B93A',
     desc: 'Marketplace locale : clients, commerçants, admin, et paiement Orange Money, Moov Money, Wave.',
@@ -18,7 +18,7 @@ export const projects = [
     image: null,
     // Contenu tiré du dépôt github.com/Ednik75/faso_market (README)
     caseStudy: {
-      label: 'Marketplace · Web',
+      label: 'Marketplace · Projet universitaire',
       lead: 'Une marketplace locale qui connecte les commerçants de Ouagadougou à leurs clients : catalogue, commandes, stock, statistiques et paiement mobile money.',
       role: 'Développeur fullstack',
       status: 'En ligne · Render',
@@ -127,7 +127,7 @@ export const projects = [
   {
     slug: 'tourisme-burkina',
     title: 'Tourism Platform',
-    kind: 'Web · Tourisme',
+    kind: 'Web · Projet universitaire',
     c1: '#F0B93A',
     c2: '#1F8A5B',
     desc: 'Découverte et réservation de destinations touristiques au Burkina Faso, avec tableau de bord admin.',
@@ -135,7 +135,7 @@ export const projects = [
     image: null,
     // Contenu tiré du dépôt github.com/tourismplatform/tourism-platform (projet d'équipe)
     caseStudy: {
-      label: 'Tourisme · Web',
+      label: 'Tourisme · Projet universitaire',
       lead: 'Une plateforme pour découvrir les destinations du Burkina Faso et les réserver en ligne, avec un tableau de bord pour l’administration.',
       role: '[Ton rôle dans l’équipe]',
       status: '[Statut]',
@@ -168,7 +168,7 @@ export const projects = [
   {
     slug: 'optilunette',
     title: 'OptiLunette',
-    kind: 'Web · E-commerce',
+    kind: 'Web · Projet perso',
     c1: '#E5533D',
     c2: '#2B4FD8',
     desc: 'Boutique de lunettes avec essayage virtuel et back-office pour opticiens.',
@@ -176,7 +176,7 @@ export const projects = [
     image: null,
     // Contenu tiré du dépôt github.com/Ednik75/optilunette (README)
     caseStudy: {
-      label: 'E-commerce · Web',
+      label: 'E-commerce · Projet perso',
       lead: 'Une plateforme optique où les clients essaient et achètent leurs lunettes en ligne, et où les opticiens gèrent leur boutique.',
       role: 'Développeur fullstack',
       status: '[Statut]',
