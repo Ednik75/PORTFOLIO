@@ -1,4 +1,5 @@
 import { profile } from '../data/profile.js'
+import ContactForm from './ContactForm.jsx'
 import Glows from './Glows.jsx'
 
 const CONTACT_GLOWS = [
@@ -22,12 +23,11 @@ export default function Contact() {
       <Glows glows={CONTACT_GLOWS} />
       <div className="wrap flex flex-col gap-12">
         <h2 className="cap m-0 font-normal text-text-2">Un projet, un stage, une idée ?</h2>
-        <a
-          href={mailto}
-          className="no-underline font-semibold text-[clamp(60px,12vw,190px)] tracking-[-0.055em] leading-[0.9]"
-        >
+        <p className="m-0 font-semibold text-[clamp(60px,12vw,190px)] tracking-[-0.055em] leading-[0.9]">
           Parlons<span className="it text-accent">-en</span>
-        </a>
+        </p>
+
+        <ContactForm />
 
         <footer className="flex flex-wrap justify-between gap-6 pt-7 border-t border-line">
           <ul className="cap m-0 p-0 list-none flex flex-wrap gap-x-7">

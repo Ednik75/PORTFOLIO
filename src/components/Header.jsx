@@ -13,6 +13,9 @@ export default function Header() {
       <a href="#projets" className={`${linkClass} max-[900px]:hidden`}>
         Projets
       </a>
+      <a href="#competences" className={`${linkClass} max-[900px]:hidden`}>
+        Compétences
+      </a>
       <a href={profile.github} className={`${linkClass} max-[900px]:hidden`}>
         GitHub
       </a>
