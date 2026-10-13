@@ -2,8 +2,8 @@
 // Les valeurs entre [CROCHETS] sont des placeholders à remplacer avant la mise en ligne.
 export const profile = {
   name: 'Martial Nitiema',
-  email: '[TON EMAIL]',
-  whatsapp: '[TON NUMÉRO]', // format international sans « + », ex. 226XXXXXXXX
+  email: 'nitiemamartial@gmail.com',
+  whatsapp: '22667302716', // format international sans « + » : 226 (Burkina) + le numéro
   github: 'https://github.com/Ednik75',
   linkedin: '[LIEN LINKEDIN]',
 
